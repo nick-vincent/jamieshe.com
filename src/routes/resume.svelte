@@ -99,7 +99,9 @@
 </p>
 
 <h3>
-	<strong>Let’s Robot</strong>
+	<a rel="external" target="_blank" href="https://www.twitch.tv/letsrobot"
+		><strong>Let’s Robot</strong></a
+	>
 	<br />
 	<small>Intern</small>
 </h3>
