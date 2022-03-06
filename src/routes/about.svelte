@@ -8,7 +8,7 @@
 
 <div>
 	<h1>About</h1>
-	<img alt="Portrait of Jamie She" src="/JamieShe.jpg" />
+	<img alt="Portrait of Jamie She" src="/JamieShe.jpg" width="1500" height="1997" />
 	<p>
 		Jamie is a multicultural user experience researcher, museum fiend, and theme park enthusiast.
 	</p>
