@@ -67,4 +67,16 @@
 		transform: scale(0.95);
 		transition-delay: 0ms;
 	}
+
+	@media print {
+		main {
+			position: static;
+			padding: 0;
+			mask-image: none;
+			-webkit-mask-image: none;
+		}
+		.content {
+			max-width: none;
+		}
+	}
 </style>

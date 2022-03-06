@@ -109,3 +109,7 @@ a:hover {
 strong {
 	font-weight: 700;
 }
+
+@page {
+	margin: 1in;
+}

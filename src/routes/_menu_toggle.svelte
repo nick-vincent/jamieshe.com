@@ -91,4 +91,10 @@
 	.open .counterwise {
 		transform: rotate(-45deg);
 	}
+
+	@media print {
+		button {
+			display: none;
+		}
+	}
 </style>

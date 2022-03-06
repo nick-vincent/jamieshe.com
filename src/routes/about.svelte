@@ -37,7 +37,7 @@
 		height: auto;
 		margin: 1em 0 0;
 	}
-	@media (min-width: 480px) {
+	@media print, (min-width: 480px) {
 		img {
 			float: left;
 			width: calc(50% - 0.5em);
