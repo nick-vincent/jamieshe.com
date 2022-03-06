@@ -31,7 +31,7 @@
 	<ul>
 		{#each navItems as item, i}
 			<li style={itemStyles(i)}>
-				<a href={item.href} on:click={() => (open = false)}>{item.text}</a>
+				<a sveltekit:prefetch href={item.href} on:click={() => (open = false)}>{item.text}</a>
 			</li>
 		{/each}
 	</ul>
