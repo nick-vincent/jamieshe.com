@@ -34,13 +34,13 @@
 	img {
 		border-radius: 1em;
 		width: 100%;
+		height: auto;
 		margin: 1em 0 0;
 	}
 	@media (min-width: 480px) {
 		img {
 			float: left;
 			width: calc(50% - 0.5em);
-			height: auto;
 			margin: 1em 1em 0 0;
 		}
 	}
