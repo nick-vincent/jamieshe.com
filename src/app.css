@@ -97,9 +97,15 @@ h4 + p {
 
 a {
 	color: var(--color-text);
-	text-decoration: underline;
+	font-weight: 700;
+	text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-thickness: from-font;
+}
+
+strong {
+	font-weight: 700;
 }

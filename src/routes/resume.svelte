@@ -51,7 +51,7 @@
 <h2>Experience</h2>
 
 <h3>
-	<strong>Meta</strong>
+	<a rel="external" target="_blank" href="https://www.meta.com"><strong>Meta</strong></a>
 	<br />
 	<small>UX Researcher</small>
 </h3>
@@ -63,7 +63,7 @@
 </p>
 
 <h3>
-	<strong>Google</strong>
+	<a rel="external" target="_blank" href="https://www.google.com"><strong>Google</strong></a>
 	<br />
 	<small>UX Researcher (Contract)</small>
 </h3>
@@ -80,7 +80,7 @@
 </p>
 
 <h3>
-	<strong>Apple</strong>
+	<a rel="external" target="_blank" href="https://www.apple.com"><strong>Apple</strong></a>
 	<br />
 	<small>Human Factor Research</small>
 </h3>
