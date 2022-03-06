@@ -35,13 +35,17 @@
 <h2>Education</h2>
 
 <p>
-	<strong>University of California, Berkeley</strong>
+	<a rel="external" target="_blank" href="https://www.berkeley.edu"
+		><strong>University of California, Berkeley</strong></a
+	>
 	<br />
 	B.A. Psychology / <em>May 2016</em>
 </p>
 
 <p>
-	<strong>The Sutardja Center for Entrepreneurship & Technology</strong>
+	<a rel="external" target="_blank" href="https://scet.berkeley.edu"
+		><strong>The Sutardja Center for Entrepreneurship & Technology</strong></a
+	>
 	<br />
 	IoT Lean Startup Competition Winner / <em>Apr 2016</em>
 </p>
