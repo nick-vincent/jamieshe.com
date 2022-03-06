@@ -2,7 +2,7 @@
 	<title>Jamie She: Resume</title>
 	<meta
 		name="description"
-		content="7+ years in behavioral research. 15+ years in experience-centric industries."
+		content="Endlessly curious. Thrives in ambiguity. Embraces rapid change."
 	/>
 </svelte:head>
 
