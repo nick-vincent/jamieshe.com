@@ -10,11 +10,14 @@
 :root {
   --color-white: rgba(255, 255, 255, 0.9);
   --color-black: rgba(0, 0, 0, 0.9);
+  --filter-gray: grayscale(20%);
 
   --color-text: var(--color-black);
   --color-background: var(--color-white);
   --color-line: rgba(0, 0, 0, 0.25);
   --color-transition: 1s ease;
+
+  --image-filter: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +25,7 @@
     --color-text: var(--color-white);
     --color-background: var(--color-black);
     --color-line: rgba(255, 255, 255, 0.25);
+    --image-filter: var(--filter-gray);
   }
 }
 
@@ -30,6 +34,7 @@
     --color-text: black;
     --color-background: white;
     --color-line: black;
+    --image-filter: none;
   }
 }
 
@@ -37,12 +42,14 @@
   --color-text: var(--color-black);
   --color-background: var(--color-white);
   --color-line: rgba(0, 0, 0, 0.25);
+  --image-filter: none;
 }
 
 .dark {
   --color-text: var(--color-white);
   --color-background: var(--color-black);
   --color-line: rgba(255, 255, 255, 0.25);
+  --image-filter: var(--filter-gray);
 }
 
 html {
@@ -134,6 +141,11 @@ a:hover {
 
 strong {
   font-weight: 700;
+}
+
+img {
+  filter: var(--image-filter);
+  transition: filter var(--color-transition);
 }
 
 @page {
