@@ -13,4 +13,8 @@
   p {
     text-align: center;
   }
+
+  p {
+    font-size: 32px;
+  }
 </style>
