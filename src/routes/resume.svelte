@@ -32,26 +32,6 @@
 <p>Participant whisperer</p>
 <p>Fluent in English, Mandarin & Cantonese</p>
 
-<h2>Education</h2>
-
-<p>
-  <a rel="external" target="_blank" href="https://www.berkeley.edu"
-    ><strong>University of California, Berkeley</strong></a
-  >
-  <br />
-  B.A. Psychology / <em>May 2016</em>
-</p>
-
-<p>
-  <a rel="external" target="_blank" href="https://scet.berkeley.edu"
-    ><strong>The Sutardja Center for Entrepreneurship & Technology</strong></a
-  >
-  <br />
-  IoT Lean Startup Competition Winner / <em>Apr 2016</em>
-</p>
-
-<p>Led team of three in developing a working SW + HW prototype for female fertility management.</p>
-
 <h2>Experience</h2>
 
 <h3>
@@ -110,3 +90,23 @@
   Conducted user surveys and usability research for lean startup. Managed social media and Twitch
   accounts. Robot nanny.
 </p>
+
+<h2>Education</h2>
+
+<p>
+  <a rel="external" target="_blank" href="https://www.berkeley.edu"
+    ><strong>University of California, Berkeley</strong></a
+  >
+  <br />
+  B.A. Psychology / <em>May 2016</em>
+</p>
+
+<p>
+  <a rel="external" target="_blank" href="https://scet.berkeley.edu"
+    ><strong>The Sutardja Center for Entrepreneurship & Technology</strong></a
+  >
+  <br />
+  IoT Lean Startup Competition Winner / <em>Apr 2016</em>
+</p>
+
+<p>Led team of three in developing a working SW + HW prototype for female fertility management.</p>
