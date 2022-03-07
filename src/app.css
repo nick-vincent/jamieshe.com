@@ -13,13 +13,21 @@
   --color-line: rgba(0, 0, 0, 0.25);
 }
 
-/* @media (prefers-color-scheme: dark) {
-	:root {
-		--color-text: white;
-		--color-background: rgba(0, 0, 0, 0.9);
-		--color-line: rgba(255, 255, 255, 0.25);
-	}
-} */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: white;
+    --color-background: rgba(0, 0, 0, 0.9);
+    --color-line: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@media print {
+  :root {
+    --color-text: black;
+    --color-background: white;
+    --color-line: black;
+  }
+}
 
 html {
   width: 100%;
