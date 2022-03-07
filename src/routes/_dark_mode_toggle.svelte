@@ -1,63 +1,25 @@
 <script>
-  import { onMount } from 'svelte';
+  import { afterUpdate } from 'svelte';
+  import DarkMode from 'svelte-dark-mode';
 
-  const STORAGE_KEY = 'theme';
-  const DARK_PREFERENCE = '(prefers-color-scheme: dark)';
-  const THEMES = {
-    DARK: 'dark',
-    LIGHT: 'light'
-  };
+  let theme = 'light';
 
-  let darkMode;
+  $: switchTheme = theme === 'dark' ? 'light' : 'dark';
 
-  onMount(() => {
-    applyTheme();
-    window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme);
+  afterUpdate(() => {
+    document.documentElement.className = theme; // "dark" or "light"
   });
-
-  const prefersDarkThemes = () => window.matchMedia(DARK_PREFERENCE).matches;
-
-  const toggleTheme = () => {
-    const stored = localStorage.getItem(STORAGE_KEY);
-
-    if (stored) {
-      // clear storage
-      localStorage.removeItem(STORAGE_KEY);
-    } else {
-      // store opposite of preference
-      localStorage.setItem(STORAGE_KEY, prefersDarkThemes() ? THEMES.LIGHT : THEMES.DARK);
-    }
-
-    applyTheme();
-  };
-
-  const applyTheme = () => {
-    const preferredTheme = prefersDarkThemes() ? THEMES.DARK : THEMES.LIGHT;
-    const currentTheme = localStorage.getItem(STORAGE_KEY) ?? preferredTheme;
-
-    if (currentTheme === THEMES.DARK) {
-      darkMode = true;
-      document.documentElement.classList.remove(THEMES.LIGHT);
-      document.documentElement.classList.add(THEMES.DARK);
-    } else {
-      darkMode = false;
-      document.documentElement.classList.remove(THEMES.DARK);
-      document.documentElement.classList.add(THEMES.LIGHT);
-    }
-  };
 </script>
 
-<button class:darkMode on:click={toggleTheme}>
+<DarkMode bind:theme />
+
+<button on:click={() => (theme = switchTheme)}>
   <span class="text">
-    {#if darkMode}
-      Switch to light mode
-    {:else}
-      Switch to dark mode
-    {/if}
+    Switch to {switchTheme} mode
   </span>
-  <span class="circle">
-    <span class="left" />
-    <span class="right" />
+  <span class="circle {theme}">
+    <span class="top" />
+    <span class="bottom" />
   </span>
 </button>
 
@@ -104,27 +66,30 @@
     transition: border-color var(--color-transition), transform var(--color-transition);
   }
 
-  .darkMode .circle {
-    transform: rotate(180deg);
+  .circle.light {
+    transform: rotate(-90deg);
   }
 
-  .left,
-  .right {
+  .circle.dark {
+    transform: rotate(90deg);
+  }
+
+  .top,
+  .bottom {
     display: block;
     position: absolute;
-    width: 8px;
-    height: 20px;
-    top: 0;
-    transition: background-color var(--color-transition);
+    width: 16px;
+    height: 8px;
+    left: 0;
   }
 
-  .left {
-    left: 0;
+  .top {
+    top: 0;
     background-color: var(--color-white);
   }
 
-  .right {
-    right: 0;
+  .bottom {
+    bottom: 0;
     background-color: var(--color-black);
   }
 
