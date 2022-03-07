@@ -8,15 +8,19 @@
 }
 
 :root {
-  --color-text: rgba(0, 0, 0, 0.9);
-  --color-background: white;
+  --color-white: rgba(255, 255, 255, 0.9);
+  --color-black: rgba(0, 0, 0, 0.9);
+
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
   --color-line: rgba(0, 0, 0, 0.25);
+  --color-transition: 1s ease;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: white;
-    --color-background: rgba(0, 0, 0, 0.9);
+    --color-text: var(--color-white);
+    --color-background: var(--color-black);
     --color-line: rgba(255, 255, 255, 0.25);
   }
 }
@@ -27,6 +31,18 @@
     --color-background: white;
     --color-line: black;
   }
+}
+
+.light {
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+  --color-line: rgba(0, 0, 0, 0.25);
+}
+
+.dark {
+  --color-text: var(--color-white);
+  --color-background: var(--color-black);
+  --color-line: rgba(255, 255, 255, 0.25);
 }
 
 html {
@@ -45,6 +61,7 @@ body {
   font-weight: 400;
   color: var(--color-text);
   background-color: var(--color-background);
+  transition: color var(--color-transition), background-color var(--color-transition);
 }
 
 h1 {
@@ -107,6 +124,7 @@ a {
   color: var(--color-text);
   font-weight: 700;
   text-decoration: none;
+  transition: color var(--color-transition);
 }
 
 a:hover {

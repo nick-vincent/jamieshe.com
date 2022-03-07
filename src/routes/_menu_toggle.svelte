@@ -56,7 +56,7 @@
     width: 30%;
     left: 35%;
     top: calc(50% - 1px);
-    background: var(--color-text);
+    background-color: var(--color-text);
     border-radius: 999em;
   }
 
@@ -68,22 +68,25 @@
   }
   .top,
   .bottom {
-    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1) 150ms, opacity 0ms 150ms;
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1) 150ms, opacity 0ms 150ms,
+      background-color var(--color-transition);
   }
   .open .top,
   .open .bottom {
     opacity: 0;
     transform: translateY(0);
-    transition: transform 150ms cubic-bezier(0.4, 0, 1, 1), opacity 0ms 150ms;
+    transition: transform 150ms cubic-bezier(0.4, 0, 1, 1), opacity 0ms 150ms,
+      background-color var(--color-transition);
   }
 
   .clockwise,
   .counterwise {
-    transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
+    transition: transform 150ms cubic-bezier(0.4, 0, 1, 1), background-color var(--color-transition);
   }
   .open .clockwise,
   .open .counterwise {
-    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1) 150ms;
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1) 150ms,
+      background-color var(--color-transition);
   }
   .open .clockwise {
     transform: rotate(45deg);

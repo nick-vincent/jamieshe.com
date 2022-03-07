@@ -1,5 +1,6 @@
 <script>
   import MenuToggle from './_menu_toggle.svelte';
+  import DarkModeToggle from './_dark_mode_toggle.svelte';
 
   export let open = false;
   export let duration = 500;
@@ -26,6 +27,8 @@
 </script>
 
 <MenuToggle bind:open />
+
+<DarkModeToggle />
 
 <nav class:open>
   <ul>
@@ -80,7 +83,6 @@
   }
 
   a {
-    color: var(--color-text);
     text-decoration: none;
     line-height: 1.25em;
   }

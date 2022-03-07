@@ -4,8 +4,7 @@
   import Nav from './_nav.svelte';
   import '../app.css';
 
-  export let navOpen = false;
-
+  let navOpen = false;
   let main: HTMLElement;
 
   const blurDuration = 500;
