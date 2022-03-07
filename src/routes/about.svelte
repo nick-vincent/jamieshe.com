@@ -8,8 +8,8 @@
 
 <div>
   <h1>About</h1>
-  <a href="/JamieShe.jpg"
-    ><img alt="Portrait of Jamie She" src="/JamieShe.jpg" width="1500" height="1500" /></a
+  <a href="/JamieShe.jpg" target="_blank"
+    ><img alt="Portrait of Jamie She" src="/JamieShe_750x999.jpg" width="750" height="999" /></a
   >
   <p>
     Jamie is a multicultural user experience researcher, museum fiend, and theme park enthusiast.
@@ -41,7 +41,7 @@
     img {
       float: left;
       width: calc(50% - 0.5em);
-      margin: 1em 1em 0 0;
+      margin: 1em 1em 0.5em 0;
     }
   }
 </style>
