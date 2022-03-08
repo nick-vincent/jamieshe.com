@@ -47,7 +47,7 @@
   }
 
   .content {
-    max-width: 50ch;
+    max-width: 25em;
     min-height: 100%;
     margin: 0 auto;
     display: flex;
