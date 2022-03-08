@@ -31,17 +31,37 @@
 </div>
 
 <style>
-  img {
+  a {
+    display: block;
+    overflow: hidden;
     border-radius: 1em;
+    margin: 1em 0 0;
+    width: 100%;
+    background: none;
+  }
+
+  img {
+    display: block;
     width: 100%;
     height: auto;
-    margin: 1em 0 0;
+    transition: transform 1s ease;
   }
+
+  a:focus img {
+    transform: scale(105%);
+  }
+
+  @media (hover: hover) {
+    a:hover img {
+      transform: scale(105%);
+    }
+  }
+
   @media print, (min-width: 480px) {
-    img {
+    a {
+      margin: 1em 1em 0.5em 0;
       float: left;
       width: calc(50% - 0.5em);
-      margin: 1em 1em 0.5em 0;
     }
   }
 </style>
