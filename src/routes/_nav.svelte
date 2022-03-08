@@ -87,17 +87,13 @@
 
   @media (hover: hover) {
     a {
+      background: none;
       transition: opacity 0.5s ease-in-out;
-    }
-
-    a::before {
-      display: none;
     }
 
     nav:not(.open) a,
     ul:hover a:not(:hover) {
       opacity: 0.25;
-      transition: opacity 0.5s ease-in-out;
     }
   }
 </style>
