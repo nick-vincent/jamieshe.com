@@ -53,6 +53,7 @@
     display: flex;
     flex-direction: column;
     place-content: center;
+    align-items: center;
     padding: 1em;
     font-size: 2em;
     line-height: 1.25em;
@@ -65,6 +66,8 @@
   }
 
   ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -82,7 +85,19 @@
     transition: all var(--duration) ease-in-out var(--delay-in);
   }
 
-  a::before {
-    display: none;
+  @media (hover: hover) {
+    a {
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    a::before {
+      display: none;
+    }
+
+    nav:not(.open) a,
+    ul:hover a:not(:hover) {
+      opacity: 0.25;
+      transition: opacity 0.5s ease-in-out;
+    }
   }
 </style>
