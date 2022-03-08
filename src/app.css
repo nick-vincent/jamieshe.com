@@ -133,6 +133,7 @@ a {
   color: var(--color-text);
   font-weight: 700;
   text-decoration: none;
+  outline: none;
   background: linear-gradient(to right, var(--color-line), var(--color-line));
   background-size: 0 2px;
   background-position: 0 1.2em;
@@ -140,10 +141,12 @@ a {
   transition: color var(--color-transition), background-size 0.3s ease;
 }
 
+a:focus {
+  background-size: 100% 2px;
+}
+
 @media (hover: hover) {
-  a:hover,
-  a:focus {
-    outline: none;
+  a:hover {
     background-size: 100% 2px;
   }
 }

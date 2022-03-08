@@ -30,10 +30,22 @@
     border-radius: 0;
     background: none;
     outline: none;
+    opacity: 0.5;
+    transition: opacity 0.25s ease;
   }
 
   button:active {
     background: none;
+  }
+
+  button:focus {
+    opacity: 1;
+  }
+
+  @media (hover: hover) {
+    button:hover {
+      opacity: 1;
+    }
   }
 
   .text {

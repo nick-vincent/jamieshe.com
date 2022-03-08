@@ -28,8 +28,6 @@
 
 <MenuToggle bind:open />
 
-<DarkModeToggle />
-
 <nav class:open>
   <ul>
     {#each navItems as item, i}
@@ -39,6 +37,8 @@
     {/each}
   </ul>
 </nav>
+
+<DarkModeToggle />
 
 <style>
   nav {
@@ -75,23 +75,29 @@
 
   li {
     opacity: 0;
+    visibility: hidden;
     transform: translateX(-0.5em);
     transition: all var(--duration) ease-in-out var(--delay-out);
   }
 
   .open li {
     opacity: 1;
+    visibility: visible;
     transform: translateX(0);
     transition: all var(--duration) ease-in-out var(--delay-in);
   }
 
-  @media (hover: hover) {
-    a {
-      background: none;
-      transition: opacity 0.5s ease-in-out;
-    }
+  a {
+    background: none;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-    nav:not(.open) a,
+  nav:not(.open) a,
+  ul:focus-within a:not(:focus) {
+    opacity: 0.25;
+  }
+
+  @media (hover: hover) {
     ul:hover a:not(:hover) {
       opacity: 0.25;
     }
