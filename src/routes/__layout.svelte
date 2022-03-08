@@ -44,6 +44,18 @@
     padding: 6em 1em;
     mask-image: var(--gradientMask);
     -webkit-mask-image: var(--gradientMask);
+    transform-origin: center;
+    transition-property: opacity, filter, transform;
+    transition-duration: var(--blur-duration);
+    transition-timing-function: ease-in-out;
+    transition-delay: var(--slide-duration);
+  }
+
+  main.navOpen {
+    opacity: 0;
+    filter: blur(1em);
+    transform: scale(0.95);
+    transition-delay: 0ms;
   }
 
   .content {
@@ -53,18 +65,6 @@
     display: flex;
     flex-direction: column;
     place-content: center;
-    transform-origin: 50% 50vh;
-    transition-property: opacity, filter, transform;
-    transition-duration: var(--blur-duration);
-    transition-timing-function: ease-in-out;
-    transition-delay: var(--slide-duration);
-  }
-
-  .navOpen .content {
-    opacity: 0;
-    filter: blur(1em);
-    transform: scale(0.95);
-    transition-delay: 0ms;
   }
 
   @media print {
