@@ -34,6 +34,7 @@
   a {
     display: block;
     overflow: hidden;
+    clip-path: content-box;
     border-radius: 1em;
     margin: 1em 0 0;
     width: 100%;
@@ -48,12 +49,12 @@
   }
 
   a:focus img {
-    transform: scale(105%);
+    transform: scale(1.05);
   }
 
   @media (hover: hover) {
     a:hover img {
-      transform: scale(105%);
+      transform: scale(1.05);
     }
   }
 
