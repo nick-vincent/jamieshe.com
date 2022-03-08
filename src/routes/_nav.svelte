@@ -74,6 +74,7 @@
   }
 
   li {
+    display: block;
     opacity: 0;
     visibility: hidden;
     transform: translateX(-0.5em);
@@ -88,6 +89,7 @@
   }
 
   a {
+    display: block;
     background: none;
     transition: opacity 0.5s ease-in-out;
   }
