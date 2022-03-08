@@ -55,7 +55,7 @@
     place-content: center;
     padding: 1em;
     font-size: 2em;
-    line-height: 1em;
+    line-height: 1.25em;
     font-weight: 700;
     letter-spacing: -0.025em;
   }
@@ -82,8 +82,7 @@
     transition: all var(--duration) ease-in-out var(--delay-in);
   }
 
-  a {
-    text-decoration: none;
-    line-height: 1.25em;
+  a::before {
+    display: none;
   }
 </style>
