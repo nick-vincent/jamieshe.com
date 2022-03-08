@@ -15,6 +15,10 @@
   $: if (main && $navigating) {
     main.scrollTo({ top: 0 });
   }
+
+  $: if (main) {
+    main.querySelectorAll('a').forEach((a) => (a.tabIndex = navOpen ? -1 : 0));
+  }
 </script>
 
 <Nav bind:open={navOpen} duration={slideDuration} delay={blurDuration / 2} />
