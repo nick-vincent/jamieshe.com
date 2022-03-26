@@ -6,6 +6,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %svelte.head%
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYKYJLVFX6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-HYKYJLVFX6');
+    </script>
   </head>
   <body>
     %svelte.body%
