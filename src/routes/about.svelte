@@ -8,9 +8,7 @@
 
 <div>
   <h1>About</h1>
-  <a href="/JamieShe.jpg" target="_blank"
-    ><img alt="Portrait of Jamie She" src="/JamieShe_750x999.jpg" width="750" height="999" /></a
-  >
+  <img alt="Portrait of Jamie She" src="/JamieShe.png" width="800" height="800" />
   <p>
     Jamie is a multicultural user experience researcher, museum fiend, and theme park enthusiast.
   </p>
@@ -31,35 +29,16 @@
 </div>
 
 <style>
-  a {
-    display: block;
-    overflow: hidden;
-    clip-path: content-box;
-    border-radius: 1em;
-    margin: 1em 0 0;
-    width: 100%;
-    background: none;
-  }
-
   img {
     display: block;
     width: 100%;
     height: auto;
-    transition: transform 1s ease;
-  }
-
-  a:focus img {
-    transform: scale(1.05);
-  }
-
-  @media (hover: hover) {
-    a:hover img {
-      transform: scale(1.05);
-    }
+    border-radius: 1em;
+    margin: 1em 0 0;
   }
 
   @media print, (min-width: 480px) {
-    a {
+    img {
       margin: 1em 1em 0.5em 0;
       float: left;
       width: calc(50% - 0.5em);
