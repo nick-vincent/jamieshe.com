@@ -14,7 +14,7 @@
   <br />
   Thrives in ambiguity
   <br />
-  Embraces rapid change
+  Brings clarity to nuance
 </p>
 
 <h2>Expertise</h2>
@@ -37,13 +37,18 @@
 <h3>
   <a rel="external" target="_blank" href="https://www.meta.com"><strong>Meta</strong></a>
   <br />
-  <small>UX Researcher</small>
+  <small>Senior UX Researcher</small>
 </h3>
 <p><em>Jun 2021 – Present</em></p>
-<h4>Reality Labs – Metaverse Avatars & Identity</h4>
+<h4>Reality Labs - XR Tech</h4>
 <p>
-  Lead exploratory research on Avatars in the Metaverse. Manage evaluative rolling research program
-  on Avatars Quality Framework.
+  Lead exploratory research on early tech innovation to drive strategy on digital human
+  representation and AI agent embodiment.
+</p>
+<h4>Reality Labs - Metaverse</h4>
+<p>
+  Leading 0–1 research on digital fashion, clothing, Generative AI, gender representation, and
+  creator ecosystem for Avatars and Identity.
 </p>
 
 <h3>
@@ -66,16 +71,14 @@
 <h3>
   <a rel="external" target="_blank" href="https://www.apple.com"><strong>Apple</strong></a>
   <br />
-  <small>Human Factor Research</small>
+  <small>Research Scientist</small>
 </h3>
 <p><em>Jul 2016 – May 2019</em></p>
+<h4>Sensor & Hardware Prototyping</h4>
 <p>
-  Designed and led mixed-method human factor research projects to support hardware, software,
-  firmware, and algorithm product design on various prototypes with participant size of 5 to 5,000.
-</p>
-<p>
-  Collaborated cross-functionally and provided the best research strategies to deliver study results
-  to design, engineering, and product development groups.
+  Designed and led mixed-method human factor research projects to support early-stage hardware,
+  software, firmware, and algorithm product design on various prototypes with participant size of 5
+  to 5,000.
 </p>
 
 <h3>
